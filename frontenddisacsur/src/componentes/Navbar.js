@@ -5,8 +5,8 @@ function Navbar() {
     <nav style={navStyle}>
       <Link style={linkStyle} to="/">🏠 Inicio</Link>
       <Link style={linkStyle} to="/productos">📦 Productos</Link>
-      <Link style={linkStyle} to="/movimientos/entrada">⬆️ Entrada</Link>
-      <Link style={linkStyle} to="/movimientos/salida">⬇️ Salida</Link>
+      <Link style={linkStyle} to="/productos/registrar">➕ Registrar</Link>
+      <Link style={linkStyle} to="/movimientos">🔄 Movimientos</Link>
       <Link style={linkStyle} to="/productos/eliminar">🗑️ Eliminar</Link>
     </nav>
   );

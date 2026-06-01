@@ -65,16 +65,17 @@ function MovimientosEntrada() {
 
     try {
       const res = await registrarProducto(nuevoProducto);
+      
+      // Primero recargamos y esperamos
+      await cargarProductos();
+
+      // Ahora sí seteamos el id recién creado
+      setDatos(prev => ({
+        ...prev,
+        id_producto: res.data.id_producto
+      }));
 
       alert("Producto registrado correctamente");
-
-      cargarProductos();
-
-      setDatos({
-        ...datos,
-        id_producto: res.data.id_producto
-      });
-
       setMostrarNuevoProducto(false);
 
       setNuevoProducto({
