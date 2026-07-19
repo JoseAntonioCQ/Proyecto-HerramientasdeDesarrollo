@@ -2,7 +2,7 @@
 
 Sistema web de gestión de inventario para DISACSUR, compuesto por una API REST (backend) y una aplicación de una sola página (frontend) que permite administrar productos y controlar sus movimientos de stock (entradas y salidas) de forma sencilla.
 
-## 📋 Descripción del proyecto
+Descripción del proyecto
 
 La aplicación permite:
 
@@ -37,7 +37,7 @@ El proyecto está dividido en dos partes independientes que se comunican entre s
 ### Base de datos
 - **MySQL** — almacena las tablas `productos` y `movimientos_inventario`.
 
-## 📂 Estructura del proyecto
+Estructura del proyecto
 
 ```
 Proyecto-HerramientasdeDesarrollo/
@@ -53,7 +53,7 @@ Proyecto-HerramientasdeDesarrollo/
         └── App.js           # Configuración de rutas
 ```
 
-## ✅ Requisitos previos
+Requisitos previos
 
 Antes de instalar el proyecto, asegúrate de tener instalado:
 
@@ -61,7 +61,7 @@ Antes de instalar el proyecto, asegúrate de tener instalado:
 - [MySQL](https://dev.mysql.com/downloads/) (servidor local o remoto).
 - [Git](https://git-scm.com/) para clonar el repositorio.
 
-## 🚀 Instalación
+Instalación
 
 ### 1. Clonar el repositorio
 
@@ -102,7 +102,7 @@ CREATE TABLE movimientos_inventario (
 );
 ```
 
-> ⚠️ Ajusta el diseño de las tablas según tus necesidades reales; esta es la estructura mínima que espera el backend.
+> Ajusta el diseño de las tablas según tus necesidades reales; esta es la estructura mínima que espera el backend.
 
 ### 3. Instalar y ejecutar el backend
 
@@ -155,7 +155,7 @@ La aplicación se abrirá automáticamente en `http://localhost:3000` y consumir
 | GET    | `/movimientos/:id`                 | Obtiene un movimiento por su ID                 |
 | GET    | `/movimientos/producto/:id`        | Lista el historial de movimientos de un producto|
 
-## 🖥️ Uso de la aplicación
+## Uso de la aplicación
 
 Una vez levantados backend y frontend, desde el menú de navegación puedes acceder a:
 
@@ -165,6 +165,6 @@ Una vez levantados backend y frontend, desde el menú de navegación puedes acce
 - **🔄 Movimientos** — registro de entradas/salidas y consulta de historial.
 - **🗑️ Eliminar** — eliminación de productos existentes.
 
-## 👤 Autor
+## Autor
 
-Proyecto desarrollado por **José Antonio CQ** como parte de la asignatura de Herramientas de Desarrollo.
+Proyecto desarrollado por **José Antonio CQ y Compañeros** como parte de la asignatura de Herramientas de Desarrollo.
